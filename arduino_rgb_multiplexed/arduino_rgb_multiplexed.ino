@@ -1,8 +1,5 @@
 bool serialEnabled = true;
 
-bool lastState2;
-bool lastState3;
-
 const int pinCount = 6;
 boolean currentState[pinCount];
 boolean lastState[pinCount];
@@ -22,6 +19,7 @@ const int pwmPairs = 2;
 int pwmCurrent [pwmPairs][3];
 int pwmNpn[] = {14, 15};
 int currentlyAdjusting = 0;
+
 
 void setup() {
   if(serialEnabled){
